@@ -117,6 +117,9 @@ set ttyfast
 "" Fix backspace indent
 set backspace=indent,eol,start
 
+"" Fix the tab 2spaces
+autocmd FileType javascript setlocal shiftwidth=2 softtabstop=2 expandtab
+
 "" Tabs. May be overriten by autocmd rules
 set tabstop=4
 set softtabstop=0
