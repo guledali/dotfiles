@@ -47,7 +47,7 @@ Plug 'scrooloose/syntastic'
 Plug 'Yggdroot/indentLine'
 Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
-Plug 'drewtempelmeyer/palenight.vim'
+Plug 'chriskempson/base16-vim'
 Plug 'kien/ctrlp.vim'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
@@ -105,8 +105,6 @@ filetype plugin indent on
 "" Basic Setup
 "*****************************************************************************"
 "" Encoding
-set background=dark
-colorscheme palenight
 set encoding=utf-8
 set fileencoding=utf-8
 set fileencodings=utf-8
@@ -510,3 +508,7 @@ else
   let g:airline_symbols.readonly = ''
   let g:airline_symbols.linenr = ''
 endif
+
+"" Color
+colorscheme base16-default-dark
+set background=dark
