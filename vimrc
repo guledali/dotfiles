@@ -512,3 +512,4 @@ endif
 "" Color
 colorscheme base16-default-dark
 set background=dark
+set transparency=0
