@@ -516,3 +516,7 @@ set transparency=0
 
 "" Language
 set keymap="swedish"
+
+"" Fontsize
+set guifont=Monaco:h15
+
