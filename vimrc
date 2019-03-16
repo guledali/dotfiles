@@ -513,3 +513,6 @@ endif
 colorscheme base16-default-dark
 set background=dark
 set transparency=0
+
+"" Language
+set keymap="swedish"
