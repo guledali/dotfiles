@@ -49,6 +49,7 @@ Plug 'avelino/vim-bootstrap-updater'
 Plug 'sheerun/vim-polyglot'
 Plug 'chriskempson/base16-vim'
 Plug 'kien/ctrlp.vim'
+Plug 'w0rp/ale'
 if isdirectory('/usr/local/opt/fzf')
   Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim'
 else
@@ -519,4 +520,21 @@ set keymap="swedish"
 
 "" Fontsize
 set guifont=Monaco:h15
+
+" ESLint autofix
+let g:ale_fix_on_save = 1
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
+
+
+" Singwarning for ESLint '✘' or '⚠'
+let g:ale_sign_error = '✘'
+let g:ale_sign_warning = '⚠'
+highlight ALEErrorSign ctermbg=NONE ctermfg=red
+highlight ALEWarningSign ctermbg=NONE ctermfg=yellow
+
+
+
 
