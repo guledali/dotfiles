@@ -67,3 +67,6 @@ endfunction
 
 noremap <silent> <c-s-up> :call <SID>swap_up()<CR>
 noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
+
+
+inoremap " ""<left>
