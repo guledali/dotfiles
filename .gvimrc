@@ -70,3 +70,4 @@ noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
 
 
 inoremap " ""<left>
+inoremap ' ''<left>
